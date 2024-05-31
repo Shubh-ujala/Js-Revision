@@ -19,3 +19,9 @@ let contactNo = "93026099XX"
 const myId = "%41"
 
 console.table([Myname,contactNo,myId]);
+
+let custName = "Shubh.."
+const custId = "001"
+var  custExp = 300000
+
+console.table([custName ,custId,custExp]);
