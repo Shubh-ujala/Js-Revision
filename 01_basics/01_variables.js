@@ -12,3 +12,10 @@ let userContactNo;
 
 console.log(userId);
 console.table([userId,userName,userPass,userCity,userContactNo]);
+
+//Day 2 just revising 
+let Myname = "Shubh Ujala"
+let contactNo = "93026099XX"
+const myId = "%41"
+
+console.table([Myname,contactNo,myId]);
