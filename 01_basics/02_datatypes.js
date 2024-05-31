@@ -7,3 +7,22 @@ console.log(3
     +
     3); //bad practice code must be readable
 
+    let name = "Shubh"
+    let age = 18
+    let isLoggedIn = false
+    let state;
+    
+    /* 
+    DATATYPES IN JS
+      number => 2^53
+      bigint
+      string => ""
+      boolean => true/false
+      null => standalone value
+      undefined => 
+      symbol => unique
+      object
+    */
+     
+    console.log(typeof undefined); // output-> undefined
+    console.log(typeof null); // output-> object
