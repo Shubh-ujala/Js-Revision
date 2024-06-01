@@ -43,3 +43,24 @@ const myFunction = function(){
 console.log(typeof myFunction); //function (object function)
 
 // https://262.ecma-international.org/5.1/#sec-11.4.3
+
+
+/********************************************************/
+
+//Stack (Primitive Datatypes)  Heap (Non - Primitive Datatypes)
+
+let myYoutubeName = "ShubhUjala"
+let anotherName = myYoutubeName
+
+anotherName = "Shubhuuu"
+console.log(myYoutubeName); // (Stack) ShubhUjala
+console.log(anotherName);//(Stack) Shubhuuuu
+
+let userOne = {
+    email: "user@google.com",
+    upi: "user@ybl"
+}
+let userTwo = userOne
+userTwo.email = "Shubh@google.com";
+console.log(userTwo.email); //(Heap) Shubh@google.com
+console.log(userOne.email); //(Heap) Shubh@google.com
