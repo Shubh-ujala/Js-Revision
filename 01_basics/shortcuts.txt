@@ -1,0 +1,4 @@
+terminal => ctrl + j
+ctrl + alt + up /down => multiline (basically multitasking)
+ctrl + f ==> to find something in the file
+ctrl + H ==> to replace something
