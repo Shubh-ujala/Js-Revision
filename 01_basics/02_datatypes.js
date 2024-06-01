@@ -15,11 +15,11 @@ console.log(3
     /* 
     DATATYPES IN JS
       number => 2^53
-      bigint
+      bigint//big integer
       string => ""
       boolean => true/false
       null => standalone value
-      undefined => 
+      undefined 
       symbol => unique
       object
     */

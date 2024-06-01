@@ -1,4 +1,4 @@
-let score = 33
+let score = "33"
 let numberScore = Number(score);
 
 console.log(numberScore);//33
