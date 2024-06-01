@@ -22,4 +22,6 @@ console.log(gameName.endsWith("f"));
 console.log(gameName.replace("-","%&"));
 console.log(gameName);//old string will be as it is because it is stack iykyk
 
+console.log(gameName.substring(1,4));
+console.log(gameName[5]);
 
