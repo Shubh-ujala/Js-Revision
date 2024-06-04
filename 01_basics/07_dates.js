@@ -17,11 +17,11 @@ let myTimeStamp = Date.now()
 
 // console.log(myTimeStamp);
 // console.log(myCreatedDate.getTime());
-// console.log(Math.floor(Date.now()/1000));
+console.log(Math.floor(Date.now()/1000)); // to convert it into seconds
 
 let newDate = new Date()
 console.log(newDate);
-console.log(newDate.getMonth() + 1);
+console.log(newDate.getMonth() + 1);// + 1 because as we know months are starting from 0 so to avoid the confusion we just add 1 
 console.log(newDate.getDay());
 
 // `${newDate.getDay()} and the time `
