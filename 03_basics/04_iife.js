@@ -7,5 +7,5 @@
 })();
 
 ( (name) => {
-    console.log(`DB CONNECTED TWO ${name}`);
+    console.log(`DB CONNECTED TO ${name}`);
 } )('shubh')
