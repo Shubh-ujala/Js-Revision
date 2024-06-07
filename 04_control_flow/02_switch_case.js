@@ -28,5 +28,5 @@ switch (month) {
     default:
         console.log("Default case matched");
         break;
-}
+};
 
