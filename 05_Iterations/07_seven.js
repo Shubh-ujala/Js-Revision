@@ -11,4 +11,4 @@ const final_Nums = myNums
                     .map((nums)=>nums*0)
                     .map((nums)=>nums+10)
                     .filter((nums)=> nums>8)
-console.log(final_Nums);
+// console.log(final_Nums);
