@@ -29,7 +29,7 @@
     Second_div.style.padding="20px";
     const myText = document.createTextNode("I am appended by clicking the first div")
     Second_div.appendChild(myText);
-    clickevent.addEventListener("click",function(e){
+    clickevent.addEventListener("mouseover",function(e){
         this.style.backgroundColor="red";
         document.body.appendChild(Second_div);
         Second_div.style.backgroundColor="black";
