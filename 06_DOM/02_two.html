@@ -15,7 +15,13 @@
         <div class="day">Thursday</div>
     </div>
 </body>
-<!-- <script>
+<script>
+    //********Important note*************//
+    /*
+     we can use forEach when we are having NodeList()
+     but when we are having HTMLCollection then we first need to convert the collection into array by using (Array.from(name_of_HTML_Collection)) and then we can use forEach
+     
+    */
     const parent = document.querySelector('.parent')
     // console.log(parent);
     // console.log(parent.children);
@@ -24,8 +30,8 @@
     // for (let i = 0; i < parent.children.length; i++) {
     //      console.log(parent.children[i].innerHTML);
         
-    // }
-    parent.children[1].style.color = "orange"
+    // // }
+    // // parent.children[1].style.color = "orange"
     // console.log(parent.firstElementChild);
     // console.log(parent.lastElementChild);
 
@@ -34,6 +40,6 @@
     // console.log(dayOne.parentElement);
     // console.log(dayOne.nextElementSibling);
 
-    console.log("NODES: ", parent.childNodes);
-</script> -->
+    // console.log("NODES: ", parent.childNodes);
+</script>
 </html>
