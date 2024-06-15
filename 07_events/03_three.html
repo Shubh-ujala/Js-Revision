@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Practice</title>
+</head>
+<body>
+    <h1>
+        Our New product!
+    </h1>
+    <img src="product.jpg" alt="no image" width="500px" height="350px">
+</body>
+<script>
+    const body = document.querySelector('body');
+    body.style.backgroundColor="#000";
+    body.style.color="yellow";
+    const image = document.querySelector('img');
+    image.addEventListener('click',function(){
+        body.style.backgroundColor="#414141";
+        alert("You have clicked on image! now background color will change")
+    })
+
+    const popUp = setInterval(function(){
+        alert("New Deal get anything only on Rs.100. Hurry Up!")
+    },5000)
+    // clearInterval
+</script>
+</html>
