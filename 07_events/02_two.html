@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Revision</title>
+</head>
+<body>
+    <h1>Js Interval Practice</h1>
+    <button id="start">start</button>
+    <button id="stop">stop</button>
+</body>
+<script>
+    const body = document.querySelector('body');
+    body.style.backgroundColor="#414141";
+    body.style.color = "#fff";
+    const startBtn = document.querySelector("#start");
+    const stopBtn = document.querySelector("#stop");
+    const startEvent = startBtn.addEventListener('click',function(){
+        const started = setInterval(function(){
+            console.log("I have started",Date.now());
+        },2000)
+
+        stopBtn.addEventListener('click',function(){
+            clearInterval(started);
+            
+        })
+    })
+    // const stopEvent = stopBtn.addEventListener('click',function(){
+    //     clearInterval(startEvent);
+    //     console.log("I have stopped!");
+    // })
+</script>
+</html>
