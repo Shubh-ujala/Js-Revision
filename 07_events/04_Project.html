@@ -1,0 +1,57 @@
+<!-- unlimited colors -->
+
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+    <title>Number Guessing Game</title>
+    <link rel="stylesheet" href="style.css" />
+    <link rel="stylesheet" href="../styles.css" />
+  </head>
+  <body style="background-color: #212121; color: #fff">
+    <nav>
+      <a href="/" aria-current="page">Home</a>
+    </nav>
+
+    <h1>Start should change the Background color every second</h1>
+    <button id="start">Start</button>
+    <button id="stop">Stop</button>
+  </body>
+  <script>
+    const body = document.querySelector('body');
+    //random colors generator 
+    
+    const RandomColor = function(){
+    const hex = "0123456789ABCDEF"
+    let randomColor = '#'
+    for(let i = 1 ; i <= 6;i++){
+        randomColor += hex[Math.floor(Math.random()*16)]
+       
+    }
+    return randomColor;
+    }
+    // const x = ();
+    // console.log(randomColor);
+
+   const startBtn =  document.querySelector('#start');
+   const stopBtn =  document.querySelector('#stop');
+   let colorset;
+   const BackgroundColorChanger = function(){
+        alert("Color changing is starting!!")
+        colorset = setInterval(function(){
+            body.style.backgroundColor=RandomColor();
+            console.log(RandomColor());
+        },1000)
+   }
+   
+   startBtn.addEventListener('click',BackgroundColorChanger)
+
+   const stopBackgroundcolorChanger = function(){
+        alert("color changing stops!")
+        clearInterval(colorset);
+   }
+   stopBtn.addEventListener('click',stopBackgroundcolorChanger);
+  </script>
+</html>
