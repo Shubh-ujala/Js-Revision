@@ -1,0 +1,98 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Todo list</title>
+    <style>
+        #add{
+            background-color: #ffffff;;
+            border: 2px solid #04AA6D;
+            border-radius: 2px;
+            /* width: 200px; */
+            width:40%;  
+            height: 30px;
+            color:black;
+            transition-duration: 0.4s;
+        }
+        #add:hover {
+        background-color: #04AA6D; /* Green */
+        color: white;
+        }
+        #delete{
+            
+            background-color: #ffffff;
+            border: 2px solid #f44336;
+            border-radius: 2px;
+            width: 40%;
+            height: 30px;
+            color: black;
+            transition-duration: 0.4s;
+      
+        }
+        #delete:hover{
+            background-color: #f44336;
+            color: white;
+        }
+        h3{
+            color: bisque;
+        }
+
+    </style>
+</head>
+<body>
+    <h1>Add your tasks by clicking on add button </h1>
+    <h2>if you want to delete the task press on delete button and enter the name of that element</h2>
+    <button id="add">Add</button>
+    <button id="delete">Delete</button>
+    <h3>your todo list is here </h3>
+    <ul></ul>
+    <br>
+    <br>
+
+
+</body>
+<script>
+    const body  = document.querySelector('body')
+    document.querySelector('body').style.backgroundColor = "#2A363B"
+    document.querySelector('body').style.color = "#99B898"
+    const addBtn = document.querySelector('#add');
+    const deleteBtn = document.querySelector('#delete')
+    const li = document.createElement('li');
+    console.log(li);
+    const ul = document.querySelector('ul');
+    
+    const appendChild = function(e){
+        
+        const li = document.createElement('li');
+        li.style.color = "#fff";
+        li.style.border = "2px solid #697275"
+        li.style.margin = "10px";
+        li.style.textAlign = "center";
+        li.innerHTML = e
+        ul.append(li);
+        console.log(ul);
+    }
+   
+    addBtn.addEventListener('click',function(){
+        let yourItem = prompt("enter your item");
+        appendChild(yourItem);
+        
+        
+    })
+
+    deleteBtn.addEventListener('click',function(){
+        let removedItem = prompt("enter the name you want to remove");
+        // removeChild(removedItem);
+        console.log(removedItem)
+        const mylist = ul.childNodes
+        const myArray = Array.from(mylist);
+        for(let i=0;i<myArray.length;i++){
+            if(myArray[i].innerHTML == removedItem){
+                ul.removeChild(myArray[i]);
+            }
+        }
+    })
+
+</script>
+</html>
