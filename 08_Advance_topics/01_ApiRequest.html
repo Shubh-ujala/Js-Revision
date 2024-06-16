@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Api Request</title>
+</head>
+<body style="background-color: #414141; color:aliceblue">
+    <img src="" alt="">
+
+    
+</body>
+<script>
+    const requestUrl = 'https://api.github.com/users/hiteshchoudhary'
+    const myApi = new XMLHttpRequest()
+    myApi.open('GET', requestUrl)
+    let data;
+    myApi.onreadystatechange = function(){
+        console.log(myApi.readyState);
+        if(myApi.readyState === 3){
+            const data = JSON.parse(this.responseText)
+            console.log(typeof data);
+            console.log(data);
+            // console.log(data.followers);
+            const img = data.avatar_url
+            const followers = data.followers
+            document.querySelector('img').setAttribute('src',img)
+            const h2 = document.createElement('h2')
+            h2.innerHTML = `Followers count is ${followers}`
+            document.body.append(h2)
+            console.log(h2);
+            
+        }
+    }
+    myApi.send();
+    
+</script>
+</html>
