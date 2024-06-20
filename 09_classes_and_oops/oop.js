@@ -37,3 +37,10 @@ const userTwo = new User("swyam",50,false)
 console.log(userOne.greeting());//welcome: shubh
 console.log(userOne);
 console.log(userTwo.greeting());
+
+/*Important note for "new" keyword
+1> when we use new keyword then an empty object got created which is commonly known as instance
+2> constructor function is called due to new keyword 
+3> all the argumeents got injected in this keyword 
+4> finally we got the output
+*/
