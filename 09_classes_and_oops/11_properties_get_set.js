@@ -13,7 +13,7 @@ function user(email,password){
     })
 
     Object.defineProperty(this,'password',{
-        get : function(){
+        get : function(){ 
             return this._password.toUpperCase()
         },
         set : function(value){
